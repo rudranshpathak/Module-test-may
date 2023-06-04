@@ -1,0 +1,95 @@
+section {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+  }
+
+/* Custom Flex Section */
+#customFlexSection {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+  }
+  
+  .flex-container {
+    float: left;
+     width: 33.33%;
+    padding: 5px;
+  }
+  
+  .flex-item::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Photo Gallery using CSS Grid */
+  #photoGallerySection {
+    padding: 50px 0;
+  }
+  
+  .photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .photo-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Bootstrap Card Section */
+  #cardSection {
+    padding: 50px 0;
+  }
+  
+  .card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  /* Bootstrap Footer */
+  footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+  }
+  
+  .footer-links {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 4px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .back-to-top:hover {
+    opacity: 1;
+  }
+  
